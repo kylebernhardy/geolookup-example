@@ -1,0 +1,29 @@
+{
+  "name": "geolookup-example",
+  "version": "0.1.0",
+  "description": "Example Harper application using the geolookup plugin",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Kyle Bernhardy"
+  },
+  "engines": {
+    "node": ">=24.0.0",
+    "harperdb": ">=4.7.0"
+  },
+  "dependencies": {
+    "geolookup-plugin": "^0.1.2"
+  },
+  "scripts": {
+    "agent:run": "npx -y @harperfast/agent@latest",
+    "agent:skills:update": "npx -y skills@latest add harperfast/skills --all --yes",
+    "start": "harperdb run .",
+    "dev": "harperdb dev .",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "cli": "npm run dev --prefix cli",
+    "deploy": "dotenv -- npm run deploy:component",
+    "deploy:component": "harperdb deploy_component . restart=rolling replicated=true"
+  }
+}

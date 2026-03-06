@@ -1,0 +1,8 @@
+rest: true
+
+'geolookup-plugin':
+  package: 'geolookup-plugin'
+  exposeGeoService: true
+  geoServiceName: 'geo'
+  exposeDataLoadService: true
+  dataLoadServiceName: 'data'

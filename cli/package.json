@@ -1,0 +1,28 @@
+{
+	"name": "geolookup-cli",
+	"version": "0.1.0",
+	"description": "Interactive CLI for loading geolookup data into Harper",
+	"license": "Apache-2.0",
+	"private": true,
+	"type": "module",
+	"author": {
+		"name": "Kyle Bernhardy"
+	},
+	"scripts": {
+		"build": "tsc",
+		"start": "node --env-file=.env dist/index.js",
+		"dev": "tsc && node --env-file=.env dist/index.js"
+	},
+	"dependencies": {
+		"ink": "^5.2.0",
+		"react": "^18.3.1"
+	},
+	"devDependencies": {
+		"@types/node": "^25.3.5",
+		"@types/react": "^18.3.0",
+		"typescript": "^5.7.0"
+	},
+	"engines": {
+		"node": ">=24.0.0"
+	}
+}

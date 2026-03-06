@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"target": "es2022",
+		"jsx": "react-jsx",
+		"outDir": "dist",
+		"rootDir": "source",
+		"strict": true,
+		"declaration": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true
+	},
+	"include": ["source/**/*"]
+}
