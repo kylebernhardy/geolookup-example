@@ -12,9 +12,6 @@
     "node": ">=24.0.0",
     "harperdb": ">=4.7.0"
   },
-  "dependencies": {
-    "geolookup-plugin": "^0.1.2"
-  },
   "scripts": {
     "agent:run": "npx -y @harperfast/agent@latest",
     "agent:skills:update": "npx -y skills@latest add harperfast/skills --all --yes",
@@ -25,5 +22,8 @@
     "cli": "npm run dev --prefix cli",
     "deploy": "dotenv -- npm run deploy:component",
     "deploy:component": "harperdb deploy_component . restart=rolling replicated=true"
+  },
+  "dependencies": {
+    "geolookup-plugin": "^0.1.10"
   }
 }
